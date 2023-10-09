@@ -35,16 +35,20 @@ There are two approaches you can use to go by it.
 
 - Run key `CTR + SHIFT + P` then type cmake, you will see "CMake Quick Start" click on it
 - It will first ask for your kit weather you want to use Visual Studio Community kit or you have a MINGW install you decide but I'm using Visual Studio 2019 x64.
+
 ![cmake kit](img/cmake_kit.png)
 
 - It will ask for your "project name" - I am using `test1` you can any name you want
-![It ask for Project Name](img/cmake_prj_name.png){:style="text-align:center"}
+
+![It ask for Project Name](img/cmake_prj_name.png)
 
 - It will also ask if you want to Create library or executable
-![exe or lib](img/cmake_exe_or_lib.png){:style="text-align:center"}
+
+![exe or lib](img/cmake_exe_or_lib.png)
 
 - Then it will ask if you are creating C++ or C file
-![select c or c++](img/select_prj.png){:style="text-align:center"}
+
+![select c or c++](img/select_prj.png)
 
 - Once you fill in those options, you get a default `CMakeLists.txt` with content:
 
@@ -90,7 +94,7 @@ Finish! this is my favourite method though
 
 If you check the panel at the bottom of your vscode, you will find a button for "build" and another one for "run".
 
-![Build and Run CMake](img/build_and_run.png){:style="text-align:center"}
+![Build and Run CMake](img/build_and_run.png)
 
 Once you build and write `[build] Build finished with exit code 0` that means you can run
 
