@@ -11,12 +11,12 @@ Finally, The steps are what are found in [vulkan Tutorial](https://www.vulkan-tu
 - Make sure you have Visual Studio and it development kit installed.
 - Get `Vulkan SDK` and make sure it's installed on your Computer
 - Find Get `GLFW` and `GLM`
-You can full installation instruction on [Vulkan Tutorial Dev. Env. for Windows](https://vulkan-tutorial.com/Development_environment#page_Windows)
+You can get full installation instruction on [Vulkan Tutorial Dev. Env. for Windows](https://vulkan-tutorial.com/Development_environment#page_Windows){:target="_blank"}
 
 
 ## Setting up Visual Studio Code
 
-1. Once you have Vulkan, GLFW and GLM on your PC, Create a folder, I will call mine `vulkan_sample` give it whatever name you want. This will be your root folder(`workspaceFolder`).
+1. Once you have Vulkan, GLFW and GLM on your PC, Create a folder, I will call mine `vulkan_sample` give it whatever name you want. This will be your root folder
 
 2. Then create the following sub folders in side your top folder(`vulkan_sample` in my case), `library` and `src`. Inside the `library folder`
 
