@@ -36,11 +36,11 @@ There are two approaches you can use to go by it.
 - Run key `CTR + SHIFT + P` then type cmake, you will see "CMake Quick Start" click on it
 - It will first ask for your kit weather you want to use Visual Studio Community kit or you have a MINGW install you decide but I'm using Visual Studio 2019 x64.
 
-![cmake kit](img/cmake_kit.png)
+![cmake kit](./img/cmake_kit.png)
 
 - It will ask for your "project name" - I am using `test1` you can any name you want
 
-![It ask for Project Name](img/cmake_prj_name.png)
+![It ask for Project Name](./img/cmake_prj_name.png)
 
 - It will also ask if you want to Create library or executable
 
