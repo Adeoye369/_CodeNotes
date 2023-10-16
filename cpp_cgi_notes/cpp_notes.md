@@ -2,7 +2,6 @@
 
 ## STEP 1 - Cmake Installation
 
-
 - Install microsoft "cmake" from Microsoft
 
 ## STEP 2 - Write a simple C++ code
@@ -99,3 +98,88 @@ If you check the panel at the bottom of your vscode, you will find a button for 
 Once you build and write `[build] Build finished with exit code 0` that means you can run
 
 [back to step 1](#step-1---cmake-installation)
+
+## Note on Pointers Class ane Virtual Function
+
+Given the code in c++
+
+```c++
+  int x = 100;
+    int *y = &x;
+
+    std::cout << "y ref = " << y << "\n";
+    std::cout << "&x ref = " << &x << "\n";
+    std::cout << "&y ref = " << &y << "\n";
+    std::cout << "*y ref = " << *y << "\n";
+```
+
+The out will be
+
+```cmd
+...\build\Debug> .".../build/Debug/pointTest.exe"
+y ref = 0000009257D8F8B4
+&x ref = 0000009257D8F8B4
+&y ref = 0000009257D8F8D8
+*y ref = 100
+```
+
+## Double pointers cols and rows
+
+```c++
+#include <iostream>
+#include <iomanip>
+#include "XtrWindow.hpp"
+
+void fill(int **p, int rowSize, int colSize)
+{
+    for (int row = 0; row < rowSize; row++)
+    {
+        std::cout << "Enter the " << colSize << " element(s) for row - [" << row << "]";
+
+        for (int col = 0; col < colSize; col++)
+            std::cin >> p[row][col];
+
+        std::cout << "\n";
+    }
+}
+
+void print(int **p, int rowSize, int colSize)
+{
+    for (int row = 0; row < rowSize; row++)
+    {
+
+        for (int col = 0; col < colSize; col++)
+            std::cout << std::setw(5) << p[row][col];
+
+        std::cout << "\n";
+    }
+}
+
+int main()
+{
+
+    int rows, cols;
+
+    std::cout << "\n Enter Number of rows and columns: ";
+    std::cin >> rows >> cols;
+
+    // Create rows of boards
+    int **board = new int *[rows];
+
+    // std::cout << "\n Enter Number of cols: ";
+    // std::cin >> cols;
+
+    // Create columns of boards
+    for (int row = 0; row < rows; row++)
+    {
+        board[row] = new int[cols];
+    }
+
+    // Insert elements into board
+    fill(board, rows, cols);
+
+    print(board, rows, cols);
+
+    return 0;
+}
+```
